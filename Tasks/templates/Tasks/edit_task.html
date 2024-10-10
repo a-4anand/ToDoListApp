@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="{% url 'task_list' %}">Home</a>
+        <a href="{% url 'add_task' %}">Add New Task</a>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <h1>Edit Task</h1>
+        <div class="form-container">
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="title">Task Title:</label>
+                    <input type="text" id="title" name="title" class="form-control" value="{{ task.title }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Task Description:</label>
+                    <textarea id="description" name="description" class="form-control" rows="4" required>{{ task.description }}</textarea>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-info">Update Task</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 To-Do List App</p>
+    </footer>
+</body>
+</html>
