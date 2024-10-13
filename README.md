@@ -1,22 +1,28 @@
-To-Do List Application
-A simple To-Do List Web Application built using Django. This app allows users to manage their daily tasks by adding, updating, deleting, and marking them as completed.
+# To-Do List Application
 
-Features
-Add Tasks: Users can add new tasks with a title and description.
-Edit Tasks: Modify existing tasks as needed.
-Delete Tasks: Remove tasks when they are no longer needed.
-Mark Complete: Tasks can be marked as completed.
-Task Filters: Easily filter tasks by their completion status.
-Prerequisites
+A simple **To-Do List Web Application** built using **Django**. This app allows users to manage their daily tasks by adding, updating, deleting, and marking them as completed.
+
+## Features
+
+- **Add Tasks:** Users can add new tasks with a title and description.
+- **Edit Tasks:** Modify existing tasks as needed.
+- **Delete Tasks:** Remove tasks when they are no longer needed.
+- **Mark Complete:** Tasks can be marked as completed.
+- **Task Filters:** Easily filter tasks by their completion status.
+
+## Prerequisites
+
 To run this project, you will need the following installed on your system:
 
-Python 3.x
-Django 3.x or higher
-Virtualenv (optional but recommended)
-Getting Started
-1. Clone the Repository
-bash
-Copy code
+- **Python 3.x**
+- **Django 3.x or higher**
+- **Virtualenv** (optional but recommended)
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/a-4anand/ToDoListApp.git
 cd ToDoListApp
 2. Set Up Virtual Environment (Optional but Recommended)
@@ -32,7 +38,7 @@ Make sure you have the necessary Python dependencies installed. If a requirement
 bash
 Copy code
 pip install -r requirements.txt
-In case requirements.txt is missing or empty, you can generate it using the following command after installing Django and any other packages:
+If requirements.txt is empty or missing, you can generate it after installing the required packages:
 
 bash
 Copy code
@@ -93,3 +99,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contact
 For any questions, feel free to reach out via GitHub at a-4anand.
 
+csharp
+Copy code
+
+You can place this content in your `README.md` file for your **ToDoListApp** repos
