@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from .models import Task
 from django.shortcuts import render
 
+
+
 # View to list all tasks
 def task_list(request):
     tasks = Task.objects.all()
