@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Task
 from django.shortcuts import render
-
+from tasks.models import Task
 
 
 # View to list all tasks
